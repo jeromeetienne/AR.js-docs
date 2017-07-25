@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>FAQ · GitBook</title>
+        <title>CHANGELOG · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="FUTURE.html" />
+    <link rel="next" href="EXAMPLES.html" />
     
     
-    <link rel="prev" href="EXAMPLES.html" />
+    <link rel="prev" href="../" />
     
 
     </head>
@@ -111,7 +111,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="CHANGELOG.html">
+        <li class="chapter active" data-level="1.2" data-path="CHANGELOG.html">
             
                 <a href="CHANGELOG.html">
             
@@ -137,7 +137,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="FAQ.html">
+        <li class="chapter " data-level="1.4" data-path="FAQ.html">
             
                 <a href="FAQ.html">
             
@@ -259,7 +259,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >FAQ</a>
+        <a href=".." >CHANGELOG</a>
     </h1>
 </div>
 
@@ -274,60 +274,64 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="arjs-faq">AR.js FAQ</h1>
-<h2 id="how-small-can-we-print-the-markers-">How small can we print the markers ?</h2>
-<p>There is no absolute. It is a ratio between the physical size of the marker, and the resolution of the camera image.
-It is a tradeoff: the larger the camera image, the slower it is running.
-The larger the camera image, the smaller the marker can be.</p>
-<h2 id="how-to-run-arjs-locally">How to Run AR.js Locally</h2>
-<p>To run AR.js locally on your computer, first clone a copy of the repository, and change to the <code>AR.js</code> folder:</p>
-<pre><code>  git clone git@github.com:jeromeetienne/AR.js.git
-  cd AR.js
-</code></pre><p>After that, serve the files using a static http server.  I use a simple command line http server called <code>http-server</code>.
-This can be installed using npm:</p>
-<pre><code>  npm install -g http-server
-</code></pre><p>to start the http-server, simply run:</p>
-<pre><code>  http-server
-</code></pre><h2 id="cant-access-user-media-error">Can&apos;t access user media error</h2>
-<p>On mobile, accessing the camera using <code>getUserMedia</code> requires that you have a secure HTTPS connection to the server.  To do this, you will need to generate a certificate by running:</p>
-<pre><code>  openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
-</code></pre><p>This will generate two files: <code>key.pem</code> and <code>cert.pem</code>.</p>
-<p>You then run the server with the <code>-S</code> to enable SSL and <code>-C</code> for your certificate files:</p>
-<pre><code>  http-server -S -C cert.pem -o
-</code></pre><p>Alternatively, you can deploy to <a href="https://pages.github.com/" target="_blank">github pages</a> which by default, is served using HTTPS.  This avoids having to configure a SSL server.</p>
-<p>Also working from localhost, you can avoid having to use HTTPS since <a href="https://w3c.github.io/webappsec-secure-contexts/#localhost" target="_blank">localhost is assumed secured</a>.</p>
-<p>Thanks to <a href="https://gist.github.com/mritzco" target="_blank">@mritzco</a> for <a href="https://gist.github.com/mritzco/18dfe13096294592d5eb53e7e1a5f63c" target="_blank">configuration directions</a>.</p>
-<h1 id="which-plateform-is-supported-">Which plateform is Supported ?</h1>
-<p>it works on any browser with WebRTC and WebGL.
-It run on platforms: android, IOS and window mobile.</p>
-<p>As experimentation, it has been on 
-<a href="https://twitter.com/jerome_etienne/status/883396955400880129" target="_blank">htc vive</a> by <a href="https://twitter.com/robenghuse" target="_blank">@robenghuse</a> 
-and <a href="https://twitter.com/jerome_etienne/status/856503929814831108" target="_blank">hololens</a> by <a href="https://twitter.com/evhan55" target="_blank">@evhan55</a>.
-What is interested is that i didn&apos;t change a line to run on those devices. AR.js ran out of the box directly
-on htv vive and Hololens, i think it is a clear proof of the web being true cross-platform.</p>
-<h1 id="how-to-release-">How To Release ?</h1>
-<p>This one is mainly for <a href="@jerome_etienne">me</a> to remember :)</p>
-<pre><code class="lang-bash"><span class="hljs-comment"># replace REVISION to the proper version</span>
-atom three.js/threex-artoolkitcontext.js package.json
-
-<span class="hljs-comment"># Rebuild a-frame and webvr-polyfill</span>
-(<span class="hljs-built_in">cd</span> aframe &amp;&amp; make minify) &amp;&amp; (<span class="hljs-built_in">cd</span> webvr-polyfill &amp;&amp; make minify)
-
-<span class="hljs-comment"># Commit everything</span>
-git add . &amp;&amp; git commit <span class="hljs-_">-a</span> -m <span class="hljs-string">&apos;Last commit before release&apos;</span>
-
-<span class="hljs-comment"># tag the release</span>
-git tag 1.0.0
-
-<span class="hljs-comment"># push the tag on github</span>
-git push origin --tags
-
-<span class="hljs-comment"># update npm package.json</span>
-npm publish
-
-<span class="hljs-comment"># update the a-frame codepen</span>
-open <span class="hljs-string">&quot;https://codepen.io/jeromeetienne/pen/mRqqzb?editors=1000#0&quot;</span>
-</code></pre>
+                                <h1 id="101-dev---current">1.0.1-dev - Current</h1>
+<ul>
+<li>added smoothedControls - everything tunable via parameters<ul>
+<li>it applies LERP for position/quaternion/scale on sub-controls</li>
+<li>if display controls object3d when sub-controls has been visible for minVisibleDelay</li>
+<li>if display controls object3d when sub-controls has been unvisible for minUnvisibleDelay</li>
+</ul>
+</li>
+<li>did THREEx.ArMarkerHelper to help visualize marker</li>
+<li>AR-Code generator - see <a href="https://jeromeetienne.github.io/AR.js/three.js/examples/arcode.html" target="_blank">AR-Code Generator</a></li>
+<li>liquid markers are in!
+<a href="https://twitter.com/jerome_etienne/status/844681159112036356" target="_blank">water tweet</a> -
+<a href="https://twitter.com/jerome_etienne/status/845646514814947328" target="_blank">boing tweet</a></li>
+<li>marker invisible cloak are in! with tweening and all :)
+<a href="https://twitter.com/jerome_etienne/status/840563600091688962" target="_blank">first tweet</a> -
+<a href="https://twitter.com/jerome_etienne/status/843757199436472320" target="_blank">video tweet</a></li>
+<li>minimal.html just got a little bit cleaner<ul>
+<li>aka the simplest way to do AR on the web</li>
+<li>or webar in less than 10 lines of html! on codepen</li>
+</ul>
+</li>
+<li>finished hole-in-the-wall demo - 
+<a href="https://twitter.com/jerome_etienne/status/846751371185541121" target="_blank">duck on my desk tweet</a></li>
+<li>support preset in a-frame a-marker - preset = [&quot;hiro&quot; | &quot;kanji&quot;]</li>
+<li>experiementation in dead-reckoning ... not conclusive</li>
+<li>early work about videoInWebgl - a important componant of phone-in-hmd usecase
+<a href="https://twitter.com/jerome_etienne/status/846805050118864897" target="_blank">first tweet</a></li>
+<li>better handling of .baseUrl in aframe default parameters</li>
+<li>fixed artoolkit projection matrix to be more webgl - <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_model_view_projection" target="_blank">projection matrix</a><ul>
+<li>it was looking to positive-z and y was upside down compared to the usual webgl one</li>
+</ul>
+</li>
+<li>Change marker axis - now positive-y is normal to the marker</li>
+<li>Added logo by @tentone - <a href="https://github.com/jeromeetienne/AR.js/blob/master/data/logo/logo-black-transparent-1280x512.png" target="_blank">AR.js logo</a>
+Nice and slick! thanks @tentone</li>
+<li>Added a-frame logo in AR - <a href="https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/aframe-logo.html" target="_blank">aframe-logo.html</a></li>
+<li>added a profile discovery. It helps choose the performance tradeoff which fit your case - <a href="https://github.com/jeromeetienne/AR.js/blob/master/three.js/examples/profile.html" target="_blank">profile</a></li>
+</ul>
+<h1 id="100---arjs-has-landed">1.0.0 - AR.js has landed</h1>
+<ul>
+<li>Fixed the resize issue in a-frame!</li>
+<li>Performance improvement of image copy time by 40%!!!<ul>
+<li>massive improvement in the pose detection time</li>
+<li>so maxDetectionRate can go way up</li>
+</ul>
+</li>
+<li>Improved documentations</li>
+</ul>
+<h1 id="090---initial-release">0.9.0 - Initial Release</h1>
+<p>I worked a lot on WebAR.
+But i recently reached <a href="https://twitter.com/jerome_etienne/status/831333879810236421" target="_blank">60fps on mobile phones</a>.
+so i think WebAR is now ready to be released :)</p>
+<p>I will keep the usual branch model</p>
+<ul>
+<li>stable release on master branch</li>
+<li>current release on dev branch</li>
+<li>features in progress on their own branch</li>
+</ul>
 
                                 
                                 </section>
@@ -355,12 +359,12 @@ open <span class="hljs-string">&quot;https://codepen.io/jeromeetienne/pen/mRqqzb
 
             
                 
-                <a href="EXAMPLES.html" class="navigation navigation-prev " aria-label="Previous page: EXAMPLES">
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Read Me">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="FUTURE.html" class="navigation navigation-next " aria-label="Next page: FUTURE">
+                <a href="EXAMPLES.html" class="navigation navigation-next " aria-label="Next page: EXAMPLES">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -371,7 +375,7 @@ open <span class="hljs-string">&quot;https://codepen.io/jeromeetienne/pen/mRqqzb
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"FAQ","level":"1.4","depth":1,"next":{"title":"FUTURE","level":"1.5","depth":1,"path":"misc/FUTURE.md","ref":"misc/FUTURE.md","articles":[]},"previous":{"title":"EXAMPLES","level":"1.3","depth":1,"path":"misc/EXAMPLES.md","ref":"misc/EXAMPLES.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","github","anchorjs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/jeromeetienne/ar.js/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/jeromeetienne/ar.js/tree/master/docs/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Github":"https://github.com/jeromeetienne/ar.js"}},"gitbook":"*","theme-default":{"styles":{"website":"gitbook/gitbook.css"}}},"file":{"path":"misc/FAQ.md","mtime":"2017-07-12T13:36:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-25T16:00:42.415Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CHANGELOG","level":"1.2","depth":1,"next":{"title":"EXAMPLES","level":"1.3","depth":1,"path":"misc/EXAMPLES.md","ref":"misc/EXAMPLES.md","articles":[]},"previous":{"title":"Read Me","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","github","anchorjs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/jeromeetienne/ar.js/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/jeromeetienne/ar.js/tree/master/docs/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Github":"https://github.com/jeromeetienne/ar.js"}},"gitbook":"*","theme-default":{"styles":{"website":"gitbook/gitbook.css"}}},"file":{"path":"misc/CHANGELOG.md","mtime":"2017-07-12T13:36:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-25T16:10:51.511Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

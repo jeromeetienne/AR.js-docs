@@ -3,6 +3,8 @@ server:
 	
 build:
 	gitbook build
+	rm -rf docs/
+	mv -f _book/ docs
 
 install:
 	gitbook install
