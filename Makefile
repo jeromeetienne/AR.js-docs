@@ -9,6 +9,9 @@ build:
 install:
 	gitbook install
 	
+clean:
+	rm -rf docs/ _book/
+	
 deploy: build
 	git commit -a -m 'new build of gitbook docs/'
 	git push
