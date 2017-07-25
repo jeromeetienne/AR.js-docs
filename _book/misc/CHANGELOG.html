@@ -1,0 +1,430 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CHANGELOG · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="EXAMPLES.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/jeromeetienne/ar.js" target="_blank" class="custom-link">Github</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Read Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="CHANGELOG.html">
+            
+                <a href="CHANGELOG.html">
+            
+                    
+                    CHANGELOG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="EXAMPLES.html">
+            
+                <a href="EXAMPLES.html">
+            
+                    
+                    EXAMPLES
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="FUTURE.html">
+            
+                <a href="FUTURE.html">
+            
+                    
+                    FUTURE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../concepts/augmented-website.html">
+            
+                <a href="../concepts/augmented-website.html">
+            
+                    
+                    augmented website
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../concepts/webar-playground.html">
+            
+                <a href="../concepts/webar-playground.html">
+            
+                    
+                    webar playground
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../posts/post-XX-how-to-use-arjs-with-aframe.html">
+            
+                <a href="../posts/post-XX-how-to-use-arjs-with-aframe.html">
+            
+                    
+                    post-XX-how-to-use-arjs-with-aframe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../posts/post-update.html">
+            
+                <a href="../posts/post-update.html">
+            
+                    
+                    post-update
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CHANGELOG</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="101-dev---current">1.0.1-dev - Current</h1>
+<ul>
+<li>added smoothedControls - everything tunable via parameters<ul>
+<li>it applies LERP for position/quaternion/scale on sub-controls</li>
+<li>if display controls object3d when sub-controls has been visible for minVisibleDelay</li>
+<li>if display controls object3d when sub-controls has been unvisible for minUnvisibleDelay</li>
+</ul>
+</li>
+<li>did THREEx.ArMarkerHelper to help visualize marker</li>
+<li>AR-Code generator - see <a href="https://jeromeetienne.github.io/AR.js/three.js/examples/arcode.html" target="_blank">AR-Code Generator</a></li>
+<li>liquid markers are in!
+<a href="https://twitter.com/jerome_etienne/status/844681159112036356" target="_blank">water tweet</a> -
+<a href="https://twitter.com/jerome_etienne/status/845646514814947328" target="_blank">boing tweet</a></li>
+<li>marker invisible cloak are in! with tweening and all :)
+<a href="https://twitter.com/jerome_etienne/status/840563600091688962" target="_blank">first tweet</a> -
+<a href="https://twitter.com/jerome_etienne/status/843757199436472320" target="_blank">video tweet</a></li>
+<li>minimal.html just got a little bit cleaner<ul>
+<li>aka the simplest way to do AR on the web</li>
+<li>or webar in less than 10 lines of html! on codepen</li>
+</ul>
+</li>
+<li>finished hole-in-the-wall demo - 
+<a href="https://twitter.com/jerome_etienne/status/846751371185541121" target="_blank">duck on my desk tweet</a></li>
+<li>support preset in a-frame a-marker - preset = [&quot;hiro&quot; | &quot;kanji&quot;]</li>
+<li>experiementation in dead-reckoning ... not conclusive</li>
+<li>early work about videoInWebgl - a important componant of phone-in-hmd usecase
+<a href="https://twitter.com/jerome_etienne/status/846805050118864897" target="_blank">first tweet</a></li>
+<li>better handling of .baseUrl in aframe default parameters</li>
+<li>fixed artoolkit projection matrix to be more webgl - <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_model_view_projection" target="_blank">projection matrix</a><ul>
+<li>it was looking to positive-z and y was upside down compared to the usual webgl one</li>
+</ul>
+</li>
+<li>Change marker axis - now positive-y is normal to the marker</li>
+<li>Added logo by @tentone - <a href="https://github.com/jeromeetienne/AR.js/blob/master/data/logo/logo-black-transparent-1280x512.png" target="_blank">AR.js logo</a>
+Nice and slick! thanks @tentone</li>
+<li>Added a-frame logo in AR - <a href="https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/aframe-logo.html" target="_blank">aframe-logo.html</a></li>
+<li>added a profile discovery. It helps choose the performance tradeoff which fit your case - <a href="https://github.com/jeromeetienne/AR.js/blob/master/three.js/examples/profile.html" target="_blank">profile</a></li>
+</ul>
+<h1 id="100---arjs-has-landed">1.0.0 - AR.js has landed</h1>
+<ul>
+<li>Fixed the resize issue in a-frame!</li>
+<li>Performance improvement of image copy time by 40%!!!<ul>
+<li>massive improvement in the pose detection time</li>
+<li>so maxDetectionRate can go way up</li>
+</ul>
+</li>
+<li>Improved documentations</li>
+</ul>
+<h1 id="090---initial-release">0.9.0 - Initial Release</h1>
+<p>I worked a lot on WebAR.
+But i recently reached <a href="https://twitter.com/jerome_etienne/status/831333879810236421" target="_blank">60fps on mobile phones</a>.
+so i think WebAR is now ready to be released :)</p>
+<p>I will keep the usual branch model</p>
+<ul>
+<li>stable release on master branch</li>
+<li>current release on dev branch</li>
+<li>features in progress on their own branch</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Read Me">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="EXAMPLES.html" class="navigation navigation-next " aria-label="Next page: EXAMPLES">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CHANGELOG","level":"1.2","depth":1,"next":{"title":"EXAMPLES","level":"1.3","depth":1,"path":"misc/EXAMPLES.md","ref":"misc/EXAMPLES.md","articles":[]},"previous":{"title":"Read Me","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","github","anchorjs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/jeromeetienne/ar.js/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/jeromeetienne/ar.js/tree/master/docs/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Github":"https://github.com/jeromeetienne/ar.js"}},"gitbook":"*","theme-default":{"styles":{"website":"gitbook/gitbook.css"}}},"file":{"path":"misc/CHANGELOG.md","mtime":"2017-07-12T13:36:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-25T15:54:25.969Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
