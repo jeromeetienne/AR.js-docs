@@ -59,31 +59,3 @@ As experimentation, it has been on
 and [hololens](https://twitter.com/jerome_etienne/status/856503929814831108) by [@evhan55](https://twitter.com/evhan55).
 What is interested is that i didn't change a line to run on those devices. AR.js ran out of the box directly
 on htv vive and Hololens, i think it is a clear proof of the web being true cross-platform.
-
-
-# How To Release ?
-
-This one is mainly for [me](@jerome_etienne) to remember :)
-
-```bash
-# replace REVISION to the proper version
-atom three.js/threex-artoolkitcontext.js package.json
-
-# Rebuild a-frame and webvr-polyfill
-(cd aframe && make minify) && (cd webvr-polyfill && make minify)
-
-# Commit everything
-git add . && git commit -a -m 'Last commit before release'
-
-# tag the release
-git tag 1.0.0
-
-# push the tag on github
-git push origin --tags
-
-# update npm package.json
-npm publish
-
-# update the a-frame codepen
-open "https://codepen.io/jeromeetienne/pen/mRqqzb?editors=1000#0"
-```
