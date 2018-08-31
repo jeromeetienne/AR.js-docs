@@ -4,10 +4,10 @@
 
 AR.js is an efficient Augmented Reality solution on the Web. 
 It runs 100% in your web browser, this means no app to install! 
-There is no need for a specific device either e.g. Tango or iphone. 
+There is no need for a specific device either e.g. Tango or iPhone. 
 It runs on all mobile platforms: Android, iOS11 and Windows mobile.
 You can use it with your own phone. 
-Depending on your device, it can run very fast, up to 60fps on 2year-old phones!
+Depending on your device, it can run very fast, up to 60fps on 2 year-old phones!
 On top of that, the code is open source and all available on [github](https://github.com/jeromeetienne/ar.js).
 
 [![screen shot 2017-04-01 at 14 36 00](https://user-images.githubusercontent.com/6317076/27866704-452eaed6-618f-11e7-9cdd-2deaef865e3e.png)](https://www.youtube.com/watch?v=0MtvjFg7tik)
@@ -21,7 +21,7 @@ Sounds good? Let's see how to use it.
 
 Today you can make
 [augmented reality in 10 Lines of HTML](https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf), isn't the web amazing ?
-It is really that simple, you can try live on [codepen](https://codepen.io/jeromeetienne/pen/mRqqzb).
+It is really that simple, you can try it live on [codepen](https://codepen.io/jeromeetienne/pen/mRqqzb).
 Just put a [hiro marker](https://github.com/jeromeetienne/AR.js/blob/master/data/images/HIRO.jpg) in front
 of the camera and we will add the augmented reality on it.
 
@@ -68,7 +68,7 @@ Don't forget to add the body style and a-scene embedded attribute. And you are *
 
 # Personalize your AR Content
 Now we have a basic cube in AR...
-It would be good to personalise the AR a bit. Let's see how to add a text, an image or even your 
+It would be good to personalise the AR a bit. Let's see how to add text, an image or even your 
 own model in augmented reality.
 
 ![screen shot 2017-07-05 at 14 45 35](https://user-images.githubusercontent.com/6317076/27867143-bf05926e-6190-11e7-855f-a90ab71976fc.png)
@@ -90,7 +90,7 @@ For more detail see [a-frame documentation about models](https://aframe.io/docs/
 ```
 
 Another way to easily personalize your AR is to put a text or an image on top.
-To add a text, simply just use [a-text](https://aframe.io/docs/0.5.0/primitives/a-text.html) as below.
+To add text, simply just use [a-text](https://aframe.io/docs/0.5.0/primitives/a-text.html) as below.
 
 ```html
 <a-text value="Hello, World!"></a-text>
@@ -137,7 +137,7 @@ For example,
 [Marcel Freinbichler](https://twitter.com/fr3ino) and [Lisi Linhart](https://twitter.com/lisi_linhart)
 wanted to do a augmented reality application for their school: *"When you go to a room, you point your phone and it shows you in augmented reality the availability of this room."*
      
-So they chosed to use barcode markers: one barcode per room. Thus when the AR application sees the marker, it converts that to into a number which matches the room. So you do a xmlhttprequest to get the current schedule of the room and display it on top of the marker. 
+So they chosed to use barcode markers: one barcode per room. Thus when the AR application sees the marker, it converts that to a number which matches the room. So you do a xmlhttprequest to get the current schedule of the room and display it on top of the marker. 
 
 I love this idea! It is useful for other people in the school. It has nice panash with AR. But most of all, it provides relevant informations directly where and when needed. This is a key principle for AR applications.
 
