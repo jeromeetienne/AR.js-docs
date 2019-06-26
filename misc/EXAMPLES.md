@@ -72,18 +72,18 @@
 - [basic](https://jeromeetienne.github.io/AR.js/aframe/examples/basic.html) :
   a-frame example for basic
   ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/basic.html))
-- [aframe-logo](https://jeromeetienne.github.io/AR.js/aframe/examples/aframe-logo.html) :
+- [aframe-logo](https://jeromeetienne.github.io/AR.js/aframe/demos/demo-aframe-logo/aframe-logo-model.html) :
   a-frame example for aframe-logo
-  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/aframe-logo.html))
-- [hatsune](https://jeromeetienne.github.io/AR.js/aframe/examples/hatsune.html) :
+  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/demos/demo-aframe-logo/aframe-logo-model.html))
+- [hatsune](https://jeromeetienne.github.io/AR.js/aframe/demos/demo-hatsune-miku) :
   a-frame example for hatsune
-  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/hatsune.html))
-- [full-hatsune](https://jeromeetienne.github.io/AR.js/aframe/examples/full-hatsune.html) :
+  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/demos/demo-hatsune-miku/index.html))
+- [full-hatsune](https://jeromeetienne.github.io/AR.js/aframe/demos/demo-hatsune-miku/full-hatsune-original.html) :
   a-frame example for full-hatsune
-  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/full-hatsune.html))
-- [minecraft](https://jeromeetienne.github.io/AR.js/aframe/examples/minecraft.html) :
+  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/demos/demo-hatsune-miku/full-hatsune-original.html))
+- [minecraft](https://jeromeetienne.github.io/AR.js/aframe/demos/demo-minecraft-launch-demo/minecraft.html) :
   a-frame example for minecraft
-  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/minecraft.html))
+  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/demos/demo-minecraft-launch-demo/minecraft.html))
 - [marker-camera](https://jeromeetienne.github.io/AR.js/aframe/examples/marker-camera.html) :
   a-frame example for marker-camera
   ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/marker-camera.html))
