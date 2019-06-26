@@ -84,6 +84,9 @@
 - [minecraft](https://jeromeetienne.github.io/AR.js/aframe/demos/demo-minecraft-launch-demo/minecraft.html) :
   a-frame example for minecraft
   ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/demos/demo-minecraft-launch-demo/minecraft.html))
+- [minecraft-launch-demo](https://jeromeetienne.github.io/AR.js/aframe/demos/demo-minecraft-launch-demo/minecraft-launch-demo.html) :
+  a-frame example for minecraft launch demo
+  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/demos/demo-minecraft-launch-demo/minecraft-launch-demo.html))
 - [marker-camera](https://jeromeetienne.github.io/AR.js/aframe/examples/marker-camera.html) :
   a-frame example for marker-camera
   ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/marker-camera.html))
@@ -97,6 +100,21 @@
 - [mobile-performance](https://jeromeetienne.github.io/AR.js/aframe/examples/mobile-performance.html) :
   a-frame example for mobile-performance
   ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/mobile-performance.html))
+- [3dio](https://jeromeetienne.github.io/AR.js/aframe/demos/demo-3dio/basic.html) :
+  a-frame example for 3d.io furtinure
+  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/demos/demo-3dio/basic.html))
+- [cute-fox-model](https://jeromeetienne.github.io/AR.js/aframe/demos/demo-firefox-release/cute-fox-model.html) :
+  a-frame example for fox model of firefox
+  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/demos/demo-firefox-release/cute-fox-model.html))
+- [two-ways-portal-door](https://jeromeetienne.github.io/AR.js/aframe/demos/demo-firefox-release/two-ways-portal-door.html) :
+  a-frame example for two ways portal door
+  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/demos/demo-firefox-release/two-ways-portal-door.html))
+- [mapbox](https://jeromeetienne.github.io/AR.js/aframe/demos/demo-mapbox/) :
+  a-frame example for mapbox
+  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/demos/demo-mapbox/))
+- [portal-door](https://jeromeetienne.github.io/AR.js/aframe/demos/demo-portal-door/basic.html) :
+  a-frame example for portal door
+  ([source](https://github.com/jeromeetienne/AR.js/blob/master/aframe/demos/demo-portal-door/basic.html))
 
 # WebVR-polyfill Examples
 - [aframe](https://jeromeetienne.github.io/AR.js/webvr-polyfill/examples/aframe.html) :
